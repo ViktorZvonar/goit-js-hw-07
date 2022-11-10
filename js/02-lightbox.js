@@ -31,11 +31,11 @@ const onDivElClick = (event) => {
   if (!isPicture) {
     return;
   }
-
-  let gallery = new SimpleLightbox(".gallery a", {
-    captionsData: "alt",
-    captionDelay: 250,
-  });
 };
 
 ulEl.addEventListener("click", onDivElClick);
+
+let gallery = new SimpleLightbox(".gallery a", {
+  captionsData: "alt",
+  captionDelay: 250,
+});
